@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: green;
+  padding: 20px 40px;
+}
+
+.header-title {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* box */
+
+.box-wrapper {
+  padding: 40px 20px;
+}
+
+.box {
+  border: 1px solid grey;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 40px;
+}
+
+.box-title {
+  font-size: 30px;
+}
+
+.input-wrapper {
+  height: 40px;
+  display: flex;
+  margin: 20px 0;
+}
+
+#input {
+  width: 300px;
+  border-radius: 0;
+  border: 1px solid grey;
+  padding-left: 20px;
+  font-size: 24px;
+}
+
+#button {
+  padding: 0 20px;
+  background-color: black;
+  border-radius: 0;
+  border: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#button:hover {
+   opacity: 0.1;
+}
+
+#error {
+  color: red;
+  text-transform: uppercase;
+}
+
+.items-wrapper {
+  border: 1px solid grey;
+  list-style: none;
+}
+
+
+ .items-wrapper:hover{
+  opacity: 0.8;
+ }
+.item {
+  padding: 20px;
+  font-size: 30px;
+  border-bottom: 1px solid grey;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+@keyframes item-new {
+  from {
+    background-color:red;
+  }
+  to {
+    background-color: white;
+  }
+}
+
+.item-new {
+  animation-name: item-new;
+  animation-duration: 2s;
+}
+
